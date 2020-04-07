@@ -4,7 +4,7 @@
       "rootDir": "src",
       "target": "es5",
       "module": "commonjs",
-      "outDir": "build",
+      "outDir": "dist",
       "sourceMap": true,
       "declaration": true,
       "strict": false,

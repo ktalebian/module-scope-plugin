@@ -18,13 +18,13 @@
   "license": "ISC",
   "author": "Kousha Talebian <k@ousha.me>",
   "files": [
-    "build",
+    "dist",
     "README.md"
   ],
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "prebuild": "rm -rf build",
+    "prebuild": "rm -rf dist",
     "build": "tsc",
     "lint": "eslint --ext ts src/",
     "lint:fix": "npm run lint -- --fix",
