@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "rootDir": "src",
+      "target": "es5",
+      "module": "commonjs",
+      "outDir": "build",
+      "sourceMap": true,
+      "declaration": true,
+      "strict": false,
+      "removeComments": true,
+      "esModuleInterop": true,
+      "lib": [
+        "ES2015"
+      ]
+    },
+    "include": [
+        "src/**/*"
+      ],
+      "exclude": [
+        "node_modules",
+      ]
+  }
