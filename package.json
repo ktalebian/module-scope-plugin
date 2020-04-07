@@ -1,6 +1,6 @@
 {
   "name": "@k88/module-scope-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Webpack resolve plugin that prevents users from importing files from outside of src/ and node_modules/ directory",
   "keywords": [
     "webpack resolve plugin",
