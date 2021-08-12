@@ -13,7 +13,7 @@ export default class ModuleScopePlugin {
     this.allowedFiles = new Set(allowedFiles);
   }
 
-  apply(compiler) {
+  apply(compiler): void {
     const { appSources } = this;
     compiler.hooks.file.tapAsync('ModuleScopePlugin', (request, contextResolver, callback) => {
       // Unknown issuer, probably webpack internals

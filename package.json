@@ -17,17 +17,18 @@
   },
   "license": "ISC",
   "author": "Kousha Talebian <k@ousha.me>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "README.md"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "tsc",
     "lint": "eslint --ext ts src/",
     "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install",
     "prepublish:public": "npm run build",
     "publish:public": "npm publish --access public"
   },
@@ -37,16 +38,16 @@
     }
   },
   "dependencies": {
-    "chalk": "^4.1.0",
-    "os": "^0.1.1",
+    "chalk": "^4.1.2",
+    "os": "^0.1.2",
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
-    "eslint-config-twilio-ts": "^1.28.0",
-    "husky": "^4.2.5",
+    "eslint": "^7.32.0",
+    "eslint-config-twilio-ts": "^1.35.1",
+    "husky": "^7.0.1",
     "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
+    "typescript": "^4.3.5"
   },
   "reveal": true
 }
